@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react"
 
+
 // Scroll Animations
 import { useInView } from "react-intersection-observer"
 import { useAnimation } from "framer-motion"
@@ -13,6 +14,7 @@ import { Instagram, Facebook, Vimeo } from "../assets/svg/social-icons"
 
 //Custom Hooks
 import useElementPosition from "../hooks/useElementPosition"
+
 
 const Footer = ({ setHamburgerPosition, onCursor }) => {
   const instagramRef = useRef(null)
@@ -57,12 +59,13 @@ const Footer = ({ setHamburgerPosition, onCursor }) => {
       <Container>
         <Flex spaceBetween>
           <FooterContent>
-            <p>902.315.1279</p>
-            <p>info@furrow.studio</p>
+
+            <a href="https://www.youtube.com/watch?v=PKH5W73eXtE&ab_channel=ADesignerWhoCodes">Lte swatc this</a>
+            <p>avs@assamvalleyschool.com</p>
           </FooterContent>
           <FooterContent wider>
-            <p>15 Camburhill Ct Unit C</p>
-            <p>Charlottetown, PE C1E 0E2</p>
+            <p>I P S C</p>
+            <p>Website Designing</p>
           </FooterContent>
           <FooterSocial>
             <a

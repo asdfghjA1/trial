@@ -91,11 +91,11 @@ const HomeBanner = ({ onCursor }) => {
     <Banner>
       <Video>
         <video
-          height="100%"
-          width="100%"
+          height='100%'
+          width='100%'
           loop
           autoPlay
-          src={require("../../assets/video/video.mp4")}
+          src={require('../../assets/video/videololo.mp4')}
         />
       </Video>
       <Canvas
@@ -106,8 +106,8 @@ const HomeBanner = ({ onCursor }) => {
         onMouseLeave={onCursor}
       />
       <BannerTitle variants={container} initial="initial" animate="animate">
-        <Headline variants={item}>DIG</Headline>
-        <Headline variants={item}>DEEP</Headline>
+        <Headline variants={item}>“Best Technology</Headline>
+        <Headline variants={item}>brings people together”</Headline>
       </BannerTitle>
     </Banner>
   )

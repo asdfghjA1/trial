@@ -4,7 +4,11 @@ import { useInView } from "react-intersection-observer"
 import { useAnimation } from "framer-motion"
 //Styled Components
 import { Container } from "../../styles/globalStyles"
-import { Content, HomeContentSection } from "../../styles/homeStyles"
+import { Content, HomeContentSection,  HomeFeaturedSection,
+  FeaturedVideo,
+  FeaturedContent,
+  FeaturedProjects,
+  FeatureColor, FeatureColor1,} from "../../styles/homeStyles"
 
 const HomeContent = () => {
   const animation = useAnimation()
@@ -34,12 +38,21 @@ const HomeContent = () => {
       }}
     >
       <Container>
-        <Content>
-          Great stories don’t just happen— <br /> they need to be uncovered. And
-          we dig deep to discover the great stories that lie just below the
-          surface. Dirt under our fingernails and all.
+        <Content >
+          <FeatureColor1>
+          <div className="background">
+          <div className="color">
+        Our school motto states that we <br/>
+          “ Building Citizens Beyond Boundaries “<br/>  and that is one of the
+           main things why <br/>the students are
+           taught how to use technology <br/>more effectively while not hampering <br/>any of our
+            day to day life to prepare <br/>them for the upcoming struggle in life.
+            </div>
+            </div>
+            </FeatureColor1>
         </Content>
       </Container>
+      
     </HomeContentSection>
   )
 }

@@ -19,34 +19,29 @@ import { motion, AnimatePresence } from "framer-motion"
 const navRoutes = [
   {
     id: 0,
-    title: "not humble",
-    path: "/not-humble",
+    title: "Advantages",
+    path: '/Advantages',
     video: "featured-video.mp4",
   },
   {
     id: 1,
-    title: "bleeping easy",
+    title: "Internet Access Restrictions ",
     path: "/bleeping-easy",
     video: "easy.mp4",
   },
   {
     id: 2,
-    title: "make it zero",
+    title: "Use of cloud ",
     path: "/make-it-zero",
     video: "make-it-zero.mp4",
   },
   {
     id: 3,
-    title: "it takes an island",
+    title: "Bonding - teachers & parents",
     path: "/it-takes-an-island",
     video: "it-takes-an-island.mp4",
   },
-  {
-    id: 4,
-    title: "50 beaches",
-    path: "/50-beaches",
-    video: "50-beaches.mp4",
-  },
+
 ]
 
 const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
@@ -69,7 +64,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
             <Container>
               <NavHeader>
                 <Flex spaceBetween noHeight>
-                  <h2 to="/">Projects</h2>
+                  <h2 to="/">Preview</h2>
                   <CloseNav
                     onClick={() => setToggleMenu(!toggleMenu)}
                     onMouseEnter={() => onCursor("pointer")}
@@ -138,10 +133,10 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
               <NavFooter>
                 <Flex spaceBetween>
                   <FooterContent>
-                    <p>info@furrow.studio</p>
+                    <p>avs@assamvalleyschool.com</p>
                   </FooterContent>
                   <FooterContent wider>
-                    <p>902.315.1279</p>
+                    <p>P.O Balipara , Assam</p>
                   </FooterContent>
                   <FooterSocial>
                     <a
@@ -164,7 +159,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                       onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}
                       href="/"
-                      target="_blank"
+                      target="www.instagram.com"
                     >
                       <Vimeo />
                     </a>

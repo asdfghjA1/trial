@@ -26,7 +26,7 @@ export const Canvas = styled.canvas`
 
 export const BannerTitle = styled(motion.h1)`
   position: absolute;
-  bottom: -120px;
+  bottom: 200px;
   left: -18px;
   color: ${props => props.theme.text};
   pointer-events: none;
@@ -34,9 +34,9 @@ export const BannerTitle = styled(motion.h1)`
 
 export const Headline = styled(motion.span)`
   display: block;
-  font-size: 23rem;
+  font-size: 8rem;
   font-weight: 900;
-  line-height: 0.76;
+  line-height: 1.4  ;
 `
 
 //Content Section
@@ -44,10 +44,10 @@ export const HomeContentSection = styled(motion.div)`
   margin-bottom: 200px;
 `
 export const Content = styled(motion.h2)`
-  width: 53%;
+  width: 100%;
   font-size: 2.3rem;
   font-weight: 400;
-  margin-left: 124px;
+  margin-left: 25%;
   color: ${props => props.theme.text};
 `
 
@@ -62,7 +62,65 @@ export const HomeFeaturedSection = styled(motion.div)`
   }
 `
 
+export const FeatureColor = styled(motion.div)`
+.color{
+  color: ${props => props.theme.text};
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+.background {
+  height: 150px;
+  padding: 10px;
+}
+
+.color {
+  margin-right: auto;
+  margin-left: auto;
+  // width: 250px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  // height: 300px;
+  border-radius: 5px;
+  backdrop-filter: blur(14px);
+  padding: 10px;
+  text-align: center;
+}
+
+.color img {
+  height: 60%;
+}
+`
+export const FeatureColor1 = styled(motion.div)`
+
+.color{
+  color: ${props => props.theme.text};
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.background {
+  height: 150px;
+  padding: 10px;
+}
+
+.color {
+  margin-right: auto;
+  margin-top: -120px;
+  margin-left: -50%;
+  // width: 250px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  // height: 300px;
+  border-radius: 5px;
+  backdrop-filter: blur(14px);
+  padding: 10px;
+  text-align: center;
+}
+
+.color img {
+  height: 60%;
+}
+`
+
+
 export const FeaturedContent = styled(motion.div)`
+font-family: "Times New Roman", Times, serif;
   height: 480px;
   width: 100%;
   padding: 56px 124px;
@@ -81,8 +139,179 @@ export const FeaturedContent = styled(motion.div)`
   }
   .featured-title {
     position: absolute;
+    bottom: -18px;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title1 {
+    position: absolute;
+    bottom: 408px;
+    font-size: 10rem;
+    font-weight: 1200;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        .h4{
+          color:white;
+        }
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title2 {
+    position: absolute;
     bottom: -128px;
     font-size: 7rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title3 {
+    position: absolute;
+    bottom: 228px;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -18px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title4 {
+    position: absolute;
+    bottom: 328px;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title5 {
+    position: absolute;
+    bottom: 228px;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title6 {
+    position: absolute;
+    bottom: 228px;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin: 0;
+    .arrow {
+      width: 120px;
+      height: 80px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      svg {
+        position: absolute;
+        top: 16px;
+        left: -48px;
+        width: 108px;
+        path {
+          fill: ${props => props.theme.text};
+        }
+      }
+    }
+  }
+  .featured-title7 {
+    position: absolute;
+    bottom: 128px;
+    font-size: 4rem;
     font-weight: 900;
     line-height: 90px;
     margin: 0;
